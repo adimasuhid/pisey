@@ -21,13 +21,13 @@ http_interactions:
       Server:
       - Oracle-Application-Server-10g/10.1.3.5.0 Oracle-HTTP-Server
       Date:
-      - Sat, 14 Dec 2013 08:08:12 GMT
+      - Sat, 14 Dec 2013 08:39:13 GMT
       Content-Location:
       - /servlet/dispatcher
       Via:
       - 1.1 becg
       Set-Cookie:
-      - JSESSIONID=5a5c501c331ec66cc166fe0adcdabb74b15e077c0ccd96d8d2a81dce3e0f2913.e38NbNeRbx0Pa40Mb34RchmLaxb0;
+      - JSESSIONID=cbca960b932fa5a94aaeb4a457af9bec22cfb0559328efdeba8efdba935ffa7f.e38NbNeRbx0Pa40Mb34RchmLahv0;
         path=/
       Content-Language:
       - en-US
@@ -184,5 +184,5 @@ http_interactions:
         and Oil","indicatorImg":"<img src=''/styles/pse/images/icons/downChange.png''
         width=''15'' height=''12'' hspace=''100'' vspace=''-15''>","securitySymbol":"M-O"}]'
     http_version: 
-  recorded_at: Sat, 14 Dec 2013 08:12:25 GMT
+  recorded_at: Sat, 14 Dec 2013 08:43:27 GMT
 recorded_with: VCR 2.8.0
