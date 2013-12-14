@@ -1,0 +1,2 @@
+default_error_message: >
+  {response: 404, message: 'No Route Definition'}

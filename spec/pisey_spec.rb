@@ -1,9 +1,15 @@
 require 'spec_helper'
 
-describe 'Pisey' do
+describe Pisey do
+  include Rack::Test::Methods
   describe "Given /stocks" do
+    it "returns json object" do
+      get "/stocks"
+      raise last_response.body.to_json
+      expect(last_response).to be_ok
+    end
+
     it "returns a list of all the stocks"
-    it "returns json object"
   end
 
   describe "Given /stocks?symbol=:id" do

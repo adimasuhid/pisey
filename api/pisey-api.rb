@@ -2,8 +2,13 @@ require 'open-uri'
 require 'json'
 
 get '/' do
-  @title = 'I Kim Atienza Mo'
-  haml :index
+  $config.default_error_message
+end
+
+get '/stocks' do
+  content_type :json
+
+  {response: 200}.to_json
 end
 
 get '/proxy.json' do

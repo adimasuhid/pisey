@@ -1,5 +1,6 @@
 require 'json'
 require 'yaml'
+require 'ostruct'
 
 class Hash
   def self.to_ostructs(obj, memo={})
