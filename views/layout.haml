@@ -1,0 +1,19 @@
+!!! 5
+%html{:lang => "en"}
+  %head
+    %meta{"http-equiv" => "X-UA-Compatible", :content => "IE-edge, chrome1"}
+    %meta{ :charset => "utf-8"}
+    %title= @title || 'I Kim Atienza Mo'
+    %link{ :rel => "stylesheet", :href => "/stylesheets/application.css" }
+    %link{ :rel => "stylesheet", :href => "/stylesheets/plum.css" }
+    %link{ :rel => "stylesheet", :href => "/stylesheets/font-awesome.min.css" }
+    %script{ :src => "/javascripts/jquery-1.10.2.min.js"}
+  %body.plumn-main
+    .container.slim
+      %section
+        = yield
+      %footer
+        %p.small
+          Powered by Wikipedia and Plum
+
+
