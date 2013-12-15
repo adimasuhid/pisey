@@ -1,7 +1,6 @@
 require 'spec_helper'
 
-describe Pisey do
-  include Rack::Test::Methods
+describe "Pisey" do
   describe "Given /stocks" do
     it "returns json object" do
       get "/stocks"

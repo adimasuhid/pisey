@@ -7,16 +7,14 @@ end
 
 get '/stocks' do
   content_type :json
+  @mapper = Mapper.new
 
-  {response: 200}.to_json
+  @mapper.all.to_json
 end
 
-get '/proxy.json' do
+get '/stocks/:id' do
   content_type :json
 
-  data  = open('http://tl.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&titles=Article&generator=random').read
-  parsed_data = JSON.parse data
-  content = parsed_data["query"]["pages"].first.last
-
-  { title: content["title"], content: content["extract"]}.to_json
+  @mapper = Mapper.new
+  (@mapper.find(params[:id].upcase) || {error: "No Such Stock"}).to_json
 end

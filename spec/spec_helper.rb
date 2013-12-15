@@ -4,6 +4,7 @@ require File.join(File.dirname(__FILE__), '../api', 'mapper.rb')
 require 'sinatra'
 require 'rack/test'
 require 'vcr'
+require 'rspec'
 
 set :environment, :test
 set :run, false
@@ -18,3 +19,8 @@ end
 def app
   Sinatra::Application
 end
+
+RSpec.configure do |config|
+  config.include Rack::Test::Methods
+end
+

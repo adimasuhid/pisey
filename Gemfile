@@ -6,4 +6,5 @@ gem 'rspec'
 gem 'json'
 gem 'vcr'
 gem 'webmock'
+gem 'rack-test'
 
