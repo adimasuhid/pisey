@@ -19,7 +19,6 @@ GET /stocks/:id #=> get specific stock
 To do
 ====
 - Historical data
-- Integration tests
 
 License
 ====
