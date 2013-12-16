@@ -1,10 +1,12 @@
+require 'sinatra'
 require File.join(File.dirname(__FILE__), '..', 'pisey.rb')
 require File.join(File.dirname(__FILE__), '../api', 'mapper.rb')
+require File.join(File.dirname(__FILE__), '../api', 'pisey-api.rb')
 
-require 'sinatra'
 require 'rack/test'
-require 'vcr'
 require 'rspec'
+require 'vcr'
+
 
 set :environment, :test
 set :run, false
